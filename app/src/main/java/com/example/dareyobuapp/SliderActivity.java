@@ -3,12 +3,14 @@ package com.example.dareyobuapp;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.dareyobuapp.Adapters.SliderAdapter;
 
@@ -17,7 +19,7 @@ public class SliderActivity extends AppCompatActivity implements View.OnClickLis
     private ViewPager viewPagerSlider;
     private LinearLayout layoutDots;
     private Button btnNext;
-    private TextView[] sliderDots;
+    private TextView[] txtDots;
     private SliderAdapter sliderAdapter;
     private int currPage;
 
@@ -31,6 +33,12 @@ public class SliderActivity extends AppCompatActivity implements View.OnClickLis
         btnNext = (Button) findViewById(R.id.slider_btn);
 
         btnNext.setOnClickListener(this);
+
+        sliderAdapter = new SliderAdapter(this);
+        viewPagerSlider.setAdapter(sliderAdapter);
+
+        addDotsIndicator(0);
+        viewPagerSlider.addOnPageChangeListener(viewListener);
     }
 
     @Override
@@ -39,24 +47,32 @@ public class SliderActivity extends AppCompatActivity implements View.OnClickLis
 
         switch (id){
             case R.id.slider_btn:
+                String btnText = btnNext.getText().toString();
+
+                if (btnText.equals("Next")) {
+
+                }else {
+                    Intent intent = new Intent(SliderActivity.this, UserConnectActivity.class);
+                    startActivity(intent);
+                }
                 break;
         }
     }
 
     public void addDotsIndicator(int position) {
-        sliderDots = new TextView[5];
+        txtDots = new TextView[5];
+        layoutDots.removeAllViews();
 
-        for (int i = 0; i < sliderDots.length; i++) {
-            sliderDots[i] = new TextView(this);
-            sliderDots[i].setText(Html.fromHtml("&#8226;"));
-            sliderDots[i].setTextSize(35);
-            sliderDots[i].setTextColor(getResources().getColor(R.color.colorPrimaryLight));
+        for (int i = 0; i < txtDots.length; i++){
+            txtDots[i] = new TextView(this);
+            txtDots[i].setText(Html.fromHtml("&#8226;"));
+            txtDots[i].setTextSize(35);
+            txtDots[i].setTextColor(getResources().getColor(R.color.colorPrimaryLight));
 
-            layoutDots.addView(sliderDots[i]);
+            layoutDots.addView(txtDots[i]);
         }
-
-        if (sliderDots.length > 0) {
-            sliderDots[position].setTextColor(getResources().getColor(R.color.colorPrimary));
+        if (txtDots.length > 0){
+            txtDots[position].setTextColor(getResources().getColor(R.color.colorPrimary));
         }
     }
 
@@ -69,8 +85,19 @@ public class SliderActivity extends AppCompatActivity implements View.OnClickLis
         @Override
         public void onPageSelected(int position) {
             addDotsIndicator(position);
-
             currPage = position;
+
+            if (position == 0) {
+                btnNext.setText("Next");
+            }else if (position == 1){
+                btnNext.setText("Next");
+            }else if (position == 2) {
+                btnNext.setText("Next");
+            }else if (position == 3) {
+                btnNext.setText("Next");
+            }else if (position == 4) {
+                btnNext.setText("Let's get started");
+            }
         }
 
         @Override

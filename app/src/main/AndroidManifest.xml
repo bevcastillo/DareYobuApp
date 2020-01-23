@@ -9,8 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SliderActivity"
-            android:theme="@style/WhiteThemeNoActionBar"></activity>
+        <activity android:name=".UserLoginActivity"
+            android:theme="@style/WhiteTheme"
+            android:parentActivityName=".UserConnectActivity"></activity>
+        <activity
+            android:name=".UserConnectActivity"
+            android:theme="@style/WhiteThemeNoActionBar" />
+        <activity
+            android:name=".SliderActivity"
+            android:theme="@style/WhiteThemeNoActionBar" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/WhiteThemeNoActionBar">
