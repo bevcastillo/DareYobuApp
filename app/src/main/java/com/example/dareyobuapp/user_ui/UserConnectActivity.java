@@ -1,4 +1,4 @@
-package com.example.dareyobuapp;
+package com.example.dareyobuapp.user_ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,9 +9,8 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import com.example.dareyobuapp.R;
 
 public class UserConnectActivity extends AppCompatActivity implements View.OnClickListener {
 

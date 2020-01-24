@@ -9,11 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UserLoginActivity"
-            android:theme="@style/WhiteTheme"
-            android:parentActivityName=".UserConnectActivity"></activity>
+        <activity android:name=".user_ui.UserCompleteProfActivity"
+            android:theme="@style/WhiteTheme"></activity>
+        <activity android:name=".user_ui.UserVerifyOTPActivity" />
         <activity
-            android:name=".UserConnectActivity"
+            android:name=".user_ui.UserAddPhoneActivity"
+            android:parentActivityName=".user_ui.UserAddLocationActivity"
+            android:theme="@style/WhiteTheme" />
+        <activity
+            android:name=".user_ui.UserAddLocationActivity"
+            android:parentActivityName=".user_ui.UserConnectActivity"
+            android:theme="@style/WhiteTheme" />
+        <activity
+            android:name=".user_ui.UserLoginActivity"
+            android:parentActivityName=".user_ui.UserConnectActivity"
+            android:theme="@style/WhiteTheme" />
+        <activity
+            android:name=".user_ui.UserConnectActivity"
             android:theme="@style/WhiteThemeNoActionBar" />
         <activity
             android:name=".SliderActivity"
