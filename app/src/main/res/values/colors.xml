@@ -14,4 +14,7 @@
     <color name="colorWhite">#fff</color>
     <color name="colorWhiteBG">#F9FAFC</color>
     <color name="colorPattensBlue">#C7E3FE</color>
+
+    <color name="colorNobel">#9A9A9A</color>
+    <color name="colorNeonBlue">#395AFF</color>
 </resources>

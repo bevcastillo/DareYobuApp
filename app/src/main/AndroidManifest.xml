@@ -9,9 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".user_ui.UserCompleteProfActivity"
-            android:theme="@style/WhiteTheme"></activity>
-        <activity android:name=".user_ui.UserVerifyOTPActivity" />
+        <activity android:name=".UserNavigationActivity"
+            android:theme="@style/WhiteThemeTransparent"></activity>
+        <activity
+            android:name=".user_ui.UserCompleteProfActivity"
+            android:theme="@style/WhiteTheme" />
+        <activity android:name=".user_ui.UserVerifyOTPActivity"
+            android:theme="@style/WhiteTheme"/>
         <activity
             android:name=".user_ui.UserAddPhoneActivity"
             android:parentActivityName=".user_ui.UserAddLocationActivity"
@@ -31,7 +35,7 @@
             android:name=".SliderActivity"
             android:theme="@style/WhiteThemeNoActionBar" />
         <activity
-            android:name=".MainActivity"
+            android:name=".splash_screen.MainActivity"
             android:theme="@style/WhiteThemeNoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

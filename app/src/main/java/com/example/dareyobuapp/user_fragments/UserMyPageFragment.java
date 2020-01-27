@@ -1,6 +1,7 @@
-package com.example.dareyobuapp;
+package com.example.dareyobuapp.user_fragments;
 
 
+import android.os.Build;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -8,15 +9,19 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
+
+import com.example.dareyobuapp.R;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class UserHomeFragment extends Fragment {
+public class UserMyPageFragment extends Fragment {
 
 
-    public UserHomeFragment() {
+    public UserMyPageFragment() {
         // Required empty public constructor
     }
 
@@ -25,7 +30,9 @@ public class UserHomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_user_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_user_my_page, container, false);
+
+        return view;
     }
 
 }

@@ -2,11 +2,13 @@ package com.example.dareyobuapp.user_ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 import com.example.dareyobuapp.R;
+import com.example.dareyobuapp.UserNavigationActivity;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
@@ -42,7 +44,8 @@ public class UserCompleteProfActivity extends AppCompatActivity implements View.
 
         switch (id) {
             case R.id.button3:
-
+                Intent toUserHome = new Intent(UserCompleteProfActivity.this, UserNavigationActivity.class);
+                startActivity(toUserHome);
                 break;
         }
     }

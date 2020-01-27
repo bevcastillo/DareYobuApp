@@ -1,4 +1,4 @@
-package com.example.dareyobuapp;
+package com.example.dareyobuapp.user_fragments;
 
 
 import android.os.Bundle;
@@ -9,14 +9,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.dareyobuapp.R;
+
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class UserMailFragment extends Fragment {
+public class UserHomeFragment extends Fragment {
 
 
-    public UserMailFragment() {
+    public UserHomeFragment() {
         // Required empty public constructor
     }
 
@@ -25,7 +27,7 @@ public class UserMailFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_user_mail, container, false);
+        return inflater.inflate(R.layout.fragment_user_home, container, false);
     }
 
 }

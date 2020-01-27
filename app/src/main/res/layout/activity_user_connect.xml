@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".User_UI.UserConnectActivity"
+    tools:context=".user_ui.UserConnectActivity"
     android:fitsSystemWindows="true">
 
     <ImageView
