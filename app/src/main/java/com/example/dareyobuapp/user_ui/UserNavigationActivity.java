@@ -1,4 +1,4 @@
-package com.example.dareyobuapp;
+package com.example.dareyobuapp.user_ui;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.example.dareyobuapp.R;
 import com.example.dareyobuapp.user_fragments.UserHomeFragment;
 import com.example.dareyobuapp.user_fragments.UserMailFragment;
 import com.example.dareyobuapp.user_fragments.UserMyPageFragment;

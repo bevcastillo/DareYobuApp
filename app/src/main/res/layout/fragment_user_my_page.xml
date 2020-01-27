@@ -279,6 +279,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/layout_user_prof_cancelled"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
@@ -293,12 +294,12 @@
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/ic_review" />
+                        android:src="@drawable/ic_cancel" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="To Review" />
+                        android:text="Cancelled" />
 
                 </LinearLayout>
 
