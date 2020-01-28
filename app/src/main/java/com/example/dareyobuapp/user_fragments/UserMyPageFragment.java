@@ -27,7 +27,8 @@ public class UserMyPageFragment extends Fragment implements View.OnClickListener
 
     private ImageView ivUserSettings;
     private LinearLayout layoutPending, layoutOnGoing, layoutCompleted, layoutToReview,
-            layoutCancelled, layoutCoupons, layoutReviews, layoutLikes, layoutBlacklist;
+            layoutCancelled, layoutCoupons, layoutReviews, layoutLikes, layoutBlacklist,
+            layoutMyReviews, layoutMyFav;
 
 
     public UserMyPageFragment() {
@@ -52,6 +53,8 @@ public class UserMyPageFragment extends Fragment implements View.OnClickListener
         layoutReviews = (LinearLayout) view.findViewById(R.id.layout_user_reviews);
         layoutLikes = (LinearLayout) view.findViewById(R.id.layout_user_likes);
         layoutBlacklist = (LinearLayout) view.findViewById(R.id.linearLayout8);
+        layoutMyReviews = (LinearLayout) view.findViewById(R.id.layout_reviews);
+        layoutMyFav = (LinearLayout) view.findViewById(R.id.layout_fav);
 
         ivUserSettings.setOnClickListener(this);
         layoutPending.setOnClickListener(this);
@@ -63,6 +66,8 @@ public class UserMyPageFragment extends Fragment implements View.OnClickListener
         layoutReviews.setOnClickListener(this);
         layoutLikes.setOnClickListener(this);
         layoutBlacklist.setOnClickListener(this);
+        layoutMyReviews.setOnClickListener(this);
+        layoutMyFav.setOnClickListener(this);
 
         return view;
     }
@@ -72,6 +77,14 @@ public class UserMyPageFragment extends Fragment implements View.OnClickListener
         int id = v.getId();
 
         switch (id) {
+            case R.id.layout_reviews:
+                Intent toMyReviews = new Intent(getActivity(), UserReviewsActivity.class);
+                startActivity(toMyReviews);
+                break;
+            case R.id.layout_fav:
+                Intent toFav = new Intent(getActivity(), UserLikesFavActivity.class);
+                startActivity(toFav);
+                break;
             case R.id.imageView2: // to settings
                 Intent toSettingsIntent = new Intent(getActivity(), UserSettingsActivity.class);
                 startActivity(toSettingsIntent);
