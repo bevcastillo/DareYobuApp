@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/circularImageView_user_likes"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/ic_lisa_picture"
+        app:civ_border="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_user_cast_talent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_user_cast_name"
+        style="@style/TextAppearance.AppCompat.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alex, 30"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/circularImageView_user_likes"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="73dp" />
+
+    <TextView
+        android:id="@+id/tv_user_cast_talent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Singer"
+        app:layout_constraintStart_toStartOf="@+id/tv_user_cast_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_user_cast_name" />
+
+    <ImageView
+        android:id="@+id/imageView_like_status"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_favorite"
+        android:tint="@color/colorRed"
+        app:layout_constraintBottom_toBottomOf="@+id/circularImageView_user_likes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/circularImageView_user_likes" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,4 +14,14 @@
     <color name="colorWhite">#fff</color>
     <color name="colorWhiteBG">#F9FAFC</color>
     <color name="colorPattensBlue">#C7E3FE</color>
+
+    <color name="colorNobel">#9A9A9A</color>
+    <color name="colorNeonBlue">#395AFF</color>
+    <color name="colorRed">#FE0000</color>
+
+    <color name="colorWarning">#ffc107</color>
+    <color name="colorSuccess">#28a745</color>
+    <color name="colorPrimaryBlue">#007bff</color>
+    <color name="colorDanger">#dc3545</color>
+    <color name="InactiveBottomNavIconColor">#939393</color>
 </resources>

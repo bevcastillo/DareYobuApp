@@ -1,10 +1,13 @@
-package com.example.dareyobuapp;
+package com.example.dareyobuapp.splash_screen;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.example.dareyobuapp.R;
+import com.example.dareyobuapp.SliderActivity;
 
 public class MainActivity extends AppCompatActivity {
 

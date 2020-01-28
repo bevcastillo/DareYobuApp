@@ -2,6 +2,7 @@ package com.example.dareyobuapp.user_ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -42,7 +43,8 @@ public class UserCompleteProfActivity extends AppCompatActivity implements View.
 
         switch (id) {
             case R.id.button3:
-
+                Intent toUserHome = new Intent(UserCompleteProfActivity.this, UserNavigationActivity.class);
+                startActivity(toUserHome);
                 break;
         }
     }

@@ -52,6 +52,8 @@ public class UserLoginActivity extends AppCompatActivity implements View.OnClick
 
         switch (id){
             case R.id.button_user_signin:
+                Intent toHomeIntent = new Intent(UserLoginActivity.this, UserNavigationActivity.class);
+                startActivity(toHomeIntent);
                 break;
             case R.id.textView_user_signup:
                 Intent addLocationIntent = new Intent(UserLoginActivity.this, UserAddLocationActivity.class);
