@@ -28,7 +28,6 @@ public class UserBlacklistActivity extends AppCompatActivity {
         setTitle("Blacklist");
 
         rvUserBlacklist = (RecyclerView) findViewById(R.id.recyclerView_user_blacklist);
-
     }
 
     @Override
@@ -38,32 +37,32 @@ public class UserBlacklistActivity extends AppCompatActivity {
 
         list.add(
             new UserBlacklistObj(
-                    "Harry", "Singer", 23
+                    "Iha Mokuami", "Singer", 23
             )
         );
         list.add(
                 new UserBlacklistObj(
-                        "Hideki", "Dancer", 24
+                        "Nobusawa Kan", "Dancer", 24
                 )
         );
         list.add(
                 new UserBlacklistObj(
-                        "Matias", "Magician", 24
+                        "Enatsu Amane", "Magician", 24
                 )
         );
         list.add(
                 new UserBlacklistObj(
-                        "Beverly", "Singer", 24
+                        "Matsuoka Junichiro", "Singer", 24
                 )
         );
         list.add(
                 new UserBlacklistObj(
-                        "June", "Dancer", 24
+                        "Ige Yasushi", "Dancer", 24
                 )
         );
         list.add(
                 new UserBlacklistObj(
-                        "Karl", "Singer", 24
+                        "Togoshi Marise", "Singer", 24
                 )
         );
 

@@ -43,4 +43,7 @@ dependencies {
     implementation 'com.mikhaellopez:circularimageview:4.1.0'
     implementation 'com.android.support:design:29.0.0'
     implementation 'com.getbase:floatingactionbutton:1.10.1'
+
+    implementation 'android.arch.navigation:navigation-fragment:1.0.0'
+    implementation 'android.arch.navigation:navigation-ui:1.0.0'
 }
