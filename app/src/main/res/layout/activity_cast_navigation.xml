@@ -4,20 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".user_ui.UserNavigationActivity">
+    tools:context=".cast_ui.CastNavigationActivity">
 
     <FrameLayout
-        android:id="@+id/user_content_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/navbar_user"
+        android:id="@+id/navbar_cast"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="0dp"
@@ -29,6 +25,6 @@
         app:itemBackground="@color/colorWhite"
         app:itemIconTint="@color/colorPrimary"
         app:itemTextColor="@color/colorPrimary"
-        app:menu="@menu/user_bottom_nav"/>
+        app:menu="@menu/cast_bottom_nav"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.example.dareyobuapp.R;
-import com.example.dareyobuapp.SliderActivity;
+import com.example.dareyobuapp.user_ui.SliderActivity;
 
 public class MainActivity extends AppCompatActivity {
 

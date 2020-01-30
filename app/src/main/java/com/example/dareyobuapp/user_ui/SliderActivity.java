@@ -1,4 +1,4 @@
-package com.example.dareyobuapp;
+package com.example.dareyobuapp.user_ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
@@ -11,8 +11,8 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.dareyobuapp.R;
 import com.example.dareyobuapp.adapters.SliderAdapter;
-import com.example.dareyobuapp.user_ui.UserConnectActivity;
 
 public class SliderActivity extends AppCompatActivity implements View.OnClickListener {
 
