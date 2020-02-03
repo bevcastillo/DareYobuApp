@@ -44,6 +44,9 @@ dependencies {
     implementation 'com.android.support:design:29.0.0'
     implementation 'com.getbase:floatingactionbutton:1.10.1'
 
-    implementation 'android.arch.navigation:navigation-fragment:1.0.0'
-    implementation 'android.arch.navigation:navigation-ui:1.0.0'
+//    implementation 'android.arch.user_bottom_nav:user_bottom_nav-fragment:1.0.0'
+//    implementation 'android.arch.user_bottom_nav:user_bottom_nav-ui:1.0.0'
+//
+//    implementation 'android.arch.cast_bottom_nav:cast_bottom_nav-fragment:1.0.0'
+//    implementation 'android.arch.cast_bottom_nav:cast_bottom_nav-ui:1.0.0'
 }
