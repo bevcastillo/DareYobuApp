@@ -14,7 +14,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        android:src="@drawable/ic_lisa_picture"
+        android:src="@drawable/ic_photo_colored"
         app:civ_border="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,7 +64,7 @@
         android:layout_height="15dp"
         android:background="@drawable/custom_rounded_online_stat"
         app:layout_constraintBottom_toBottomOf="@+id/circularImageView_user_mail"
-        app:layout_constraintEnd_toEndOf="@+id/circularImageView_user_mail" />
+        app:layout_constraintEnd_toEndOf="@+id/circularImageView_user_mail"/>
 
     <View
         style="@style/Divider"

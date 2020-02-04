@@ -152,6 +152,8 @@
             android:fontFamily="sans-serif-medium"
             android:text="Create account"
             android:textAllCaps="false"
+            android:minHeight="0dp"
+            android:padding="10dp"
             android:textColor="@color/colorWhite"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
