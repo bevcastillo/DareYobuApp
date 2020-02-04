@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_bottom_cast_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center|left">
+
+        <TextView
+            android:id="@+id/tv_res_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20 Jan 12:45"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:background="@drawable/custom_rounded_online_stat"
+            android:backgroundTint="@color/colorBlack"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:background="@drawable/custom_rounded_online_stat"
+            android:backgroundTint="@color/colorBlack"
+            android:layout_marginLeft="5dp"/>
+
+        <Button
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:background="@drawable/custom_rounded_online_stat"
+            android:backgroundTint="@color/colorBlack"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_res_end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20 Jan 12:45"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/cg_cast_extension"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:chipSpacing="10dp"
+            android:theme="@style/Theme.MaterialComponents.Light">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chips_15min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15 mins" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chips_30min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30 mins"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chips_60min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60 mins"/>
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="right|center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Can't go"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:background="@drawable/custom_primary_button"
+            android:textColor="@color/colorWhite"
+            android:backgroundTint="@color/colorRed"
+            android:textStyle="bold"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_resv_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:background="@drawable/custom_primary_button"
+            android:textColor="@color/colorWhite"
+            android:backgroundTint="@color/colorNeonBlue"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_marginLeft="15dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,6 +1,7 @@
 package com.example.dareyobuapp.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,9 +12,11 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.dareyobuapp.R;
+import com.example.dareyobuapp.ViewReservationActivity;
 import com.example.dareyobuapp.models.UserResObj;
 
 import java.util.List;
@@ -34,6 +37,21 @@ public class UserReservationAdapter extends RecyclerView.Adapter<UserReservation
         View v;
         v = LayoutInflater.from(parent.getContext()).inflate(R.layout.custom_user_res_layout, parent, false);
         final ViewHolder viewHolder = new ViewHolder(v);
+
+        viewHolder.layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String castName = list.get(viewHolder.getAdapterPosition()).getCast_name();
+                String castTalent = list.get(viewHolder.getAdapterPosition()).getCast_talent();
+                String resStatus = list.get(viewHolder.getAdapterPosition()).getCast_res_status();
+
+                Intent viewReservationIntent = new Intent(v.getContext(), ViewReservationActivity.class);
+                viewReservationIntent.putExtra("cast_name", castName);
+                viewReservationIntent.putExtra("cast_talent", castTalent);
+                viewReservationIntent.putExtra("res_status", resStatus);
+                v.getContext().startActivity(viewReservationIntent);
+            }
+        });
 
         return viewHolder;
     }
@@ -67,6 +85,7 @@ public class UserReservationAdapter extends RecyclerView.Adapter<UserReservation
 
         TextView tvCastName, tvCastTalent, tvResTime;
         Button btnResStat;
+        ConstraintLayout layout;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -75,6 +94,7 @@ public class UserReservationAdapter extends RecyclerView.Adapter<UserReservation
             tvCastTalent = (TextView) itemView.findViewById(R.id.tv_user_cast_res_talent);
             tvResTime = (TextView) itemView.findViewById(R.id.tv_user_cast_res_time);
             btnResStat = (Button) itemView.findViewById(R.id.btn_user_cast_res_status);
+            layout = (ConstraintLayout) itemView.findViewById(R.id.layout_reservation);
         }
     }
 }
