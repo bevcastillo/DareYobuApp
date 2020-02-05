@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ViewReservationActivity"></activity>
-        <activity android:name=".cast_ui.CastNavigationActivity" />
+        <activity android:name=".cast_ui.CastNavigationActivity"
+            android:theme="@style/WhiteThemeTransparent"/>
         <activity android:name=".user_ui.UserSettingsActivity" />
         <activity android:name=".user_ui.UserCouponsActivity" />
         <activity android:name=".user_ui.UserBlacklistActivity" />

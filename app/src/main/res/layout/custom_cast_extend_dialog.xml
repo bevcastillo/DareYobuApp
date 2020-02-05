@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select extension time"
+        android:textColor="@color/colorBlack"
+        style="@style/TextAppearance.AppCompat.Menu"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/cg_cast_extension_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:chipSpacing="10dp"
+            android:theme="@style/Theme.MaterialComponents.Light">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chips_30min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30 mins"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chips_1hr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 hr"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chips_2hrs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 hrs"/>
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/cg_cast_extension_dialog_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:chipSpacing="10dp"
+            android:theme="@style/Theme.MaterialComponents.Light">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chips_3hrs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 hrs" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chips_6hrs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6 hrs"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chips_12hrs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12 hrs"/>
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Extended price: 14,000 yen"
+        style="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/btn_extend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_primary_button"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="10dp"
+        android:text="Extend"
+        android:textColor="@color/colorWhite"/>
+
+</LinearLayout>
