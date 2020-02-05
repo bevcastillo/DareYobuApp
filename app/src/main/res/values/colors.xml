@@ -24,4 +24,6 @@
     <color name="colorPrimaryBlue">#007bff</color>
     <color name="colorDanger">#dc3545</color>
     <color name="InactiveBottomNavIconColor">#939393</color>
+
+    <color name="colorLighterPrimary">#FBDCD1</color>
 </resources>

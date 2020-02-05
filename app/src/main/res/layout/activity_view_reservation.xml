@@ -95,6 +95,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
                             android:background="@drawable/custom_half_curved"
+                            android:backgroundTint="@color/colorLighterPrimary"
                             android:orientation="horizontal"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
@@ -115,13 +116,14 @@
                                     android:layout_width="20dp"
                                     android:layout_height="20dp"
                                     android:src="@drawable/ic_chat_bubble"
-                                    android:alpha="0.8"/>
+                                    android:tint="@color/colorPrimary"/>
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Chat"
-                                    android:textSize="12dp" />
+                                    android:textSize="12dp"
+                                    android:textColor="@color/colorPrimary"/>
 
 
                             </LinearLayout>
@@ -139,13 +141,14 @@
                                     android:layout_width="25dp"
                                     android:layout_height="25dp"
                                     android:src="@drawable/ic_call"
-                                    android:alpha="0.8"/>
+                                    android:tint="@color/colorPrimary"/>
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Call"
-                                    android:textSize="12dp" />
+                                    android:textSize="12dp"
+                                    android:textColor="@color/colorPrimary"/>
 
                             </LinearLayout>
                         </LinearLayout>

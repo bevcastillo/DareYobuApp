@@ -15,6 +15,7 @@ android {
     buildTypes {
         release {
             minifyEnabled false
+            multiDexEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -59,4 +60,8 @@ dependencies {
 
     implementation 'com.jakewharton:butterknife:10.2.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+    implementation 'com.google.android.gms:play-services:12.0.1'
+
+    implementation 'com.android.support:multidex:1.0.3'
+
 }

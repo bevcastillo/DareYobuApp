@@ -3,16 +3,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".cast_fragments.CastHomeFragment">
+    tools:context=".cast_fragments.CastHomeFragment"
+    android:background="@color/colorWhiteBG">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/include_layout_not_logged">
 
-        <androidx.recyclerview.widget.RecyclerView
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/pullToRefresh_cast_post"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_cast_all_post"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
     </FrameLayout>
 
