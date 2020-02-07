@@ -42,6 +42,7 @@ public class UserReservationFragment extends Fragment {
         appBarLayout = (AppBarLayout) view.findViewById(R.id.appbar_user_reservation);
         tabLayoutUserRes = (TabLayout) view.findViewById(R.id.tabLayout_user_reservation);
         viewPagerUserRes = (ViewPager) view.findViewById(R.id.vPager_user_reservation);
+
         UserResPagerAdapter adapter = new UserResPagerAdapter(getFragmentManager());
         adapter.AddFragment(new UserAllResTabFragment(),"All");
         adapter.AddFragment(new UserPendingResTabFragment(), "Pending");

@@ -26,4 +26,8 @@
     <color name="InactiveBottomNavIconColor">#939393</color>
 
     <color name="colorLighterPrimary">#FBDCD1</color>
+    
+    <color name="colorWhiteSmoke">#F5F5F5</color>
+    <color name="colorSilver">#C0C0C0</color>
+    <color name="colorGray">#808080</color>
 </resources>

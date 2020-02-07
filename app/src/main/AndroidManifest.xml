@@ -13,12 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ChatMoreOptActivity"></activity>
-
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="@string/mapKey" />
-
+        <activity android:name=".ViewCastProfileActivity"
+            android:theme="@style/WhiteTheme"></activity>
+        <activity android:name=".ChatMoreOptActivity" />
         <activity android:name=".ViewReservationActivity" />
         <activity
             android:name=".cast_ui.CastNavigationActivity"

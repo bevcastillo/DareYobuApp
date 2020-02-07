@@ -11,7 +11,7 @@
         android:title="Reservation"
         app:showAsAction="ifRoom"/>
     <item android:id="@+id/nav_mail"
-        android:icon="@drawable/ic_chat_bubble"
+        android:icon="@drawable/ic_chat_dot"
         android:title="Mail"
         app:showAsAction="ifRoom"/>
     <item android:id="@+id/nav_mypage"
