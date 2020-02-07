@@ -59,4 +59,7 @@ dependencies {
 
     implementation 'com.jakewharton:butterknife:10.2.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+
+    implementation 'com.github.jd-alexander:LikeButton:0.2.3' //heart animation
+
 }

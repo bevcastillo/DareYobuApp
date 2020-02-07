@@ -11,7 +11,7 @@
     <FrameLayout
         android:id="@+id/relative"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_above="@+id/layout_extend"
         android:layout_marginBottom="5dp">
 
@@ -94,33 +94,37 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
                             android:background="@drawable/custom_half_curved"
-                            android:orientation="horizontal"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+                            android:backgroundTint="@color/colorLighterPrimary"
                             android:gravity="right|bottom"
+                            android:orientation="horizontal"
+                            android:padding="6dp"
 
-                            android:padding="6dp">
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
 
                             <LinearLayout
                                 android:id="@+id/layout_call"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:orientation="vertical"
                                 android:layout_marginLeft="16dp"
-                                android:layout_marginRight="10dp">
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
 
                                 <ImageView
                                     android:layout_width="20dp"
                                     android:layout_height="20dp"
                                     android:src="@drawable/ic_chat_bubble"
-                                    android:alpha="0.8"/>
+                                    android:tint="@color/colorPrimary" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Chat"
+                                    android:textColor="@color/colorPrimary"
                                     android:textSize="12dp" />
 
 
@@ -130,215 +134,39 @@
                                 android:id="@+id/linearLayout12"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:orientation="vertical"
+                                android:layout_marginLeft="10dp"
                                 android:layout_marginRight="16dp"
-                                android:layout_marginLeft="10dp">
+                                android:gravity="center"
+                                android:orientation="vertical">
 
                                 <ImageView
                                     android:layout_width="25dp"
                                     android:layout_height="25dp"
                                     android:src="@drawable/ic_call"
-                                    android:alpha="0.8"/>
+                                    android:tint="@color/colorPrimary" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Call"
+                                    android:textColor="@color/colorPrimary"
                                     android:textSize="12dp" />
 
                             </LinearLayout>
                         </LinearLayout>
 
-
-                        <TextView
-                            android:id="@+id/textView9"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="24dp"
-                            android:layout_marginLeft="24dp"
-                            android:layout_marginTop="24dp"
-                            android:text="Start Date\n&amp; Time"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/linearLayout13" />
-
-                        <LinearLayout
-                            android:id="@+id/linearLayout9"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="32dp"
-                            android:layout_marginLeft="32dp"
-                            android:orientation="vertical"
-                            app:layout_constraintBottom_toBottomOf="@+id/textView9"
-                            app:layout_constraintStart_toEndOf="@+id/textView9"
-                            app:layout_constraintTop_toTopOf="@+id/textView9">
-
-                            <TextView
-                                style="@style/TextAppearance.AppCompat.Small"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Thur, 27 Feb 2020"
-                                android:textColor="@color/colorBlack"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="23:45" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/linearLayout10"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:orientation="vertical"
-                            app:layout_constraintStart_toStartOf="@+id/linearLayout9"
-                            app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
-
-                            <Button
-                                android:layout_width="6dp"
-                                android:layout_height="6dp"
-                                android:layout_marginTop="10dp"
-                                android:background="@drawable/custom_rounded_online_stat"
-                                android:backgroundTint="@color/colorBlack" />
-
-                            <Button
-                                android:layout_width="6dp"
-                                android:layout_height="6dp"
-                                android:layout_marginTop="10dp"
-                                android:background="@drawable/custom_rounded_online_stat"
-                                android:backgroundTint="@color/colorBlack" />
-
-                            <Button
-                                android:layout_width="6dp"
-                                android:layout_height="6dp"
-                                android:layout_marginTop="10dp"
-                                android:background="@drawable/custom_rounded_online_stat"
-                                android:backgroundTint="@color/colorBlack" />
-
-                        </LinearLayout>
-
-                        <TextView
-                            android:id="@+id/textView10"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="16dp"
-                            android:text="Start Date\n&amp; Time"
-                            app:layout_constraintStart_toStartOf="@+id/textView9"
-                            app:layout_constraintTop_toBottomOf="@+id/linearLayout10" />
-
-
-                        <LinearLayout
-                            android:id="@+id/linearLayout11"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="32dp"
-                            android:layout_marginLeft="32dp"
-                            android:orientation="vertical"
-                            app:layout_constraintBottom_toBottomOf="@+id/textView10"
-                            app:layout_constraintStart_toEndOf="@+id/textView10"
-                            app:layout_constraintTop_toTopOf="@+id/textView10">
-
-                            <TextView
-                                style="@style/TextAppearance.AppCompat.Small"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Thur, 27 Feb 2020"
-                                android:textColor="@color/colorBlack"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="23:45" />
-
-                        </LinearLayout>
-
-                        <TextView
-                            android:id="@+id/tv_addr"
-                            style="@style/TextAppearance.AppCompat.Small"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="32dp"
-                            android:text="Address"
-                            app:layout_constraintStart_toStartOf="@+id/textView10"
-                            app:layout_constraintTop_toBottomOf="@+id/textView10" />
-
-                        <TextView
-                            android:id="@+id/tv_duration"
-                            style="@style/TextAppearance.AppCompat.Small"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="6dp"
-                            android:text="Duration"
-                            app:layout_constraintStart_toStartOf="@+id/tv_addr"
-                            app:layout_constraintTop_toBottomOf="@+id/tv_addr" />
-
-                        <TextView
-                            android:id="@+id/tv_rate"
-                            style="@style/TextAppearance.AppCompat.Small"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="6dp"
-                            android:text="Rate"
-                            app:layout_constraintStart_toStartOf="@+id/tv_duration"
-                            app:layout_constraintTop_toBottomOf="@+id/tv_duration" />
-
-                        <TextView
-                            android:id="@+id/tv_rest_location"
-                            style="@style/TextAppearance.AppCompat.Small"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Tokyo, Japan"
-                            android:textColor="@color/colorBlack"
-                            app:layout_constraintBottom_toBottomOf="@+id/tv_addr"
-                            app:layout_constraintStart_toStartOf="@+id/linearLayout11"
-                            app:layout_constraintTop_toTopOf="@+id/tv_addr" />
-
-                        <TextView
-                            android:id="@+id/tv_res_duration"
-                            style="@style/TextAppearance.AppCompat.Small"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="1hr 45min"
-                            android:textColor="@color/colorBlack"
-                            app:layout_constraintBottom_toBottomOf="@+id/tv_duration"
-                            app:layout_constraintStart_toStartOf="@+id/tv_rest_location"
-                            app:layout_constraintTop_toTopOf="@+id/tv_duration" />
-
-                        <TextView
-                            android:id="@+id/textView7"
-                            style="@style/TextAppearance.AppCompat.Small"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="800 per hr"
-                            android:textColor="@color/colorBlack"
-                            app:layout_constraintBottom_toBottomOf="@+id/tv_rate"
-                            app:layout_constraintStart_toStartOf="@+id/tv_res_duration"
-                            app:layout_constraintTop_toTopOf="@+id/tv_rate" />
-
-                        <TextView
-                            android:id="@+id/tv_res_amount"
-                            style="@style/TextAppearance.AppCompat.Menu"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:layout_marginEnd="24dp"
-                            android:layout_marginRight="24dp"
-                            android:layout_marginBottom="16dp"
-                            android:text="$429"
-                            android:textColor="@color/colorBlack"
-                            android:textStyle="bold"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
-
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                 </androidx.cardview.widget.CardView>
+
+                <include
+                    android:id="@+id/layout_resveration_details"
+                    layout="@layout/custom_reservation_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"/>
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"

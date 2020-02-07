@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.dareyobuapp.R;
+import com.example.dareyobuapp.ViewCastProfileActivity;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
@@ -52,8 +53,10 @@ public class UserLoginActivity extends AppCompatActivity implements View.OnClick
 
         switch (id){
             case R.id.button_user_signin:
-                Intent toHomeIntent = new Intent(UserLoginActivity.this, UserNavigationActivity.class);
-                startActivity(toHomeIntent);
+//                Intent toHomeIntent = new Intent(UserLoginActivity.this, UserNavigationActivity.class);
+//                startActivity(toHomeIntent);
+                Intent sampleIntent = new Intent(this, ViewCastProfileActivity.class);
+                startActivity(sampleIntent);
                 break;
             case R.id.textView_user_signup:
                 Intent addLocationIntent = new Intent(UserLoginActivity.this, UserAddLocationActivity.class);

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewCastProfileActivity"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarLayout_view_cast_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar_view_cast_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/cv_viewp_photo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="32dp"
+                    android:src="@drawable/ic_photo_colored"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/layout_viewp_rank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginRight="24dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@+id/cv_viewp_photo"
+                    app:layout_constraintEnd_toStartOf="@+id/cv_viewp_photo"
+                    app:layout_constraintTop_toTopOf="@+id/cv_viewp_photo">
+
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LEGEND"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rank"
+                        android:textColor="@color/colorBlack" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_viewp_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@+id/cv_viewp_photo"
+                    app:layout_constraintStart_toEndOf="@+id/cv_viewp_photo"
+                    app:layout_constraintTop_toTopOf="@+id/cv_viewp_photo">
+
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$8,000"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="per hr"
+                        android:textColor="@color/colorBlack" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_viewp_name_age"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Beverly May Castillo, 30"
+                    android:textColor="@color/colorBlack"
+                    app:layout_constraintEnd_toEndOf="@+id/cv_viewp_photo"
+                    app:layout_constraintStart_toStartOf="@+id/cv_viewp_photo"
+                    app:layout_constraintTop_toBottomOf="@+id/cv_viewp_photo" />
+
+                <LinearLayout
+                    android:id="@+id/layout_viewp_talent_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center|left"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_viewp_name_age"
+                    app:layout_constraintStart_toStartOf="@+id/tv_viewp_name_age"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_viewp_name_age">
+
+                    <TextView
+                        android:id="@+id/tv_res_start_date"
+                        style="@style/TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Singer"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/custom_rounded_online_stat"
+                        android:backgroundTint="@color/colorBlack" />
+
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tokyo, Japan"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@+id/layout_viewp_talent_location"
+                    app:layout_constraintStart_toStartOf="@+id/layout_viewp_talent_location"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_viewp_talent_location">
+
+                    <RatingBar
+                        android:id="@+id/ratingBar_viewp_reviews"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="(115)" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_viewp_reserve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/custom_block_rounded_outlined"
+                    android:fontFamily="sans-serif-medium"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:stateListAnimator="@null"
+                    android:text="Reserve"
+                    android:textColor="@color/colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="@+id/layout_viewp_call"
+                    app:layout_constraintEnd_toStartOf="@+id/layout_viewp_call"
+                    app:layout_constraintTop_toTopOf="@+id/layout_viewp_call" />
+
+                <LinearLayout
+                    android:id="@+id/layout_viewp_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/custom_block_rounded_outlined"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="@+id/linearLayout14"
+                    app:layout_constraintStart_toStartOf="@+id/linearLayout14"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout14">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_phone_outlined"
+                        android:tint="@color/colorPrimary" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_viewp_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/custom_block_rounded_outlined"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="@+id/layout_viewp_call"
+                    app:layout_constraintStart_toEndOf="@+id/layout_viewp_call"
+                    app:layout_constraintTop_toTopOf="@+id/layout_viewp_call">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_speech_outlined"
+                        android:tint="@color/colorPrimary" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:text="@string/StringText"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_viewp_call" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout_view_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:minHeight="?attr/actionBarSize"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            app:tabTextColor="@color/colorBlack"
+            app:tabIndicatorColor="@color/colorBlack"
+            android:theme="@style/WhiteTheme"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vPager_view_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

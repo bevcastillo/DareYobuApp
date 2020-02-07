@@ -26,6 +26,7 @@
         android:text="Estimated time has been confirmed.\nPlease send a word greeting \nto the user" />
 
     <Button
+        android:id="@+id/btn_send_mssg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"

@@ -11,6 +11,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 
 import com.example.dareyobuapp.R;
+import com.example.dareyobuapp.cast_ui.CastNavigationActivity;
 
 public class UserConnectActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -44,6 +45,8 @@ public class UserConnectActivity extends AppCompatActivity implements View.OnCli
                 startActivity(userIntent);
                 break;
             case R.id.btn_cast:
+                Intent castIntent = new Intent(UserConnectActivity.this, CastNavigationActivity.class);
+                startActivity(castIntent);
                 break;
         }
     }
