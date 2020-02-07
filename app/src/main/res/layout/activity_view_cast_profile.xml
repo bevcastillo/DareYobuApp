@@ -192,6 +192,7 @@
                     android:background="@drawable/custom_block_rounded_outlined"
                     android:orientation="vertical"
                     android:padding="8dp"
+                    android:gravity="center"
                     app:layout_constraintEnd_toEndOf="@+id/linearLayout14"
                     app:layout_constraintStart_toStartOf="@+id/linearLayout14"
                     app:layout_constraintTop_toBottomOf="@+id/linearLayout14">
@@ -199,7 +200,7 @@
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/ic_call"
+                        android:src="@drawable/ic_phone_outlined"
                         android:tint="@color/colorPrimary" />
 
                 </LinearLayout>
@@ -213,6 +214,7 @@
                     android:background="@drawable/custom_block_rounded_outlined"
                     android:orientation="vertical"
                     android:padding="8dp"
+                    android:gravity="center"
                     app:layout_constraintBottom_toBottomOf="@+id/layout_viewp_call"
                     app:layout_constraintStart_toEndOf="@+id/layout_viewp_call"
                     app:layout_constraintTop_toTopOf="@+id/layout_viewp_call">
@@ -220,7 +222,7 @@
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/ic_chat_dot"
+                        android:src="@drawable/ic_speech_outlined"
                         android:tint="@color/colorPrimary" />
 
                 </LinearLayout>

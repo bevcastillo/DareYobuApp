@@ -52,7 +52,6 @@
 
     <Button
         android:id="@+id/slider_btn"
-        style="@style/TextAppearance.AppCompat.Medium"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -67,7 +66,6 @@
         android:text="Next"
         android:textAllCaps="false"
         android:textColor="@color/colorWhite"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
