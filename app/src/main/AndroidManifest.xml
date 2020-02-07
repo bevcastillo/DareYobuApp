@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CreateReservationActivity"></activity>
+        <activity android:name=".AddNewAddrActivity"></activity>
+        <activity android:name=".CreateReservationActivity" />
         <activity
             android:name=".ViewCastProfileActivity"
             android:theme="@style/WhiteTheme" />

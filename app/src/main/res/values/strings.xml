@@ -15,4 +15,14 @@
 
     <!--    <string name="mapKey" translatable="false">AIzaSyB_qsP8AOP_P0MdlPz-48TDaJYjTP3vbjo</string>-->
 
+    <string name="stringAddNewAddr">Add new address</string>
+    <string name="stringStAddr">Street</string>
+    <string name="stringAddrLine1">Address Line 1</string>
+    <string name="stringAddrLine2">Address Line 2</string>
+    
+    <string name="stringStartDateTime">Start Date &amp; Time</string>
+    <string name="stringEndDateTime">End Date &amp; Time</string>
+
+    <string name="stringDate">Date</string>
+    <string name="stringTime">Time</string>
 </resources>
