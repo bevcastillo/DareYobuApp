@@ -1,6 +1,7 @@
 package com.example.dareyobuapp.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,9 +9,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.dareyobuapp.CreateReservationActivity;
 import com.example.dareyobuapp.R;
+import com.example.dareyobuapp.ViewCastProfileActivity;
+import com.example.dareyobuapp.ViewReservationActivity;
 import com.example.dareyobuapp.models.CastPerson;
 
 import java.util.ArrayList;
@@ -31,6 +36,16 @@ public class CastProfileListAdapter extends RecyclerView.Adapter<CastProfileList
         view = LayoutInflater.from(parent.getContext()).inflate(R.layout.custom_profile_view, parent, false);
         final ViewHolder viewHolder = new ViewHolder(view);
 
+        viewHolder.cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String castName = personArrayList.get(viewHolder.getAdapterPosition()).getName();
+
+                Intent createReservationIntent = new Intent(v.getContext(), ViewCastProfileActivity.class);
+                createReservationIntent.putExtra("cast_name", castName);
+                v.getContext().startActivity(createReservationIntent);
+            }
+        });
         return viewHolder;
     }
 
@@ -54,6 +69,7 @@ public class CastProfileListAdapter extends RecyclerView.Adapter<CastProfileList
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView tvRank, tvName, tvRating, tvRate, tvLocation;
         ImageView ivImage;
+        CardView cardView;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -63,6 +79,7 @@ public class CastProfileListAdapter extends RecyclerView.Adapter<CastProfileList
             tvName = (TextView) itemView.findViewById(R.id.tv_cast_name);
             tvLocation = (TextView) itemView.findViewById(R.id.tv_cast_location);
             tvRate = (TextView) itemView.findViewById(R.id.tv_cast_rate);
+            cardView = (CardView) itemView.findViewById(R.id.card_view_profile);
 
         }
     }
