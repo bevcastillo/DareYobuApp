@@ -12,16 +12,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.dareyobuapp.R;
 import com.example.dareyobuapp.models.SectionDataModel;
-import com.example.dareyobuapp.models.SectionListAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ObjectListAdapter extends RecyclerView.Adapter<ObjectListAdapter.ViewHolder> {
+public class CastTalentListAdapter extends RecyclerView.Adapter<CastTalentListAdapter.ViewHolder> {
     private List<SectionDataModel> dataModels;
     private Context context;
 
-    public ObjectListAdapter(ArrayList<SectionDataModel> dataModels, Context context) {
+    public CastTalentListAdapter(ArrayList<SectionDataModel> dataModels, Context context) {
         this.dataModels = dataModels;
         this.context = context;
     }
@@ -41,7 +40,7 @@ public class ObjectListAdapter extends RecyclerView.Adapter<ObjectListAdapter.Vi
         ArrayList singleSectionItems = dataModels.get(position).getPersonlist();
         holder.tvItemTitle.setText(sectionName);
 
-        SectionListAdapter itemListDataAdapter = new SectionListAdapter(singleSectionItems, context);
+        CastProfileListAdapter itemListDataAdapter = new CastProfileListAdapter(singleSectionItems, context);
         holder.rvList.setHasFixedSize(true);
         holder.rvList.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
         holder.rvList.setAdapter(itemListDataAdapter);

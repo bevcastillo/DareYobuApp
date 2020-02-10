@@ -1,7 +1,6 @@
-package com.example.dareyobuapp.models;
+package com.example.dareyobuapp.adapters;
 
 import android.content.Context;
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,15 +11,15 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.dareyobuapp.R;
+import com.example.dareyobuapp.models.CastPerson;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-public class SectionListAdapter extends RecyclerView.Adapter<SectionListAdapter.ViewHolder> {
+public class CastProfileListAdapter extends RecyclerView.Adapter<CastProfileListAdapter.ViewHolder> {
     private ArrayList<CastPerson> personArrayList;
     private Context context;
 
-    public SectionListAdapter(ArrayList<CastPerson> personArrayList, Context context) {
+    public CastProfileListAdapter(ArrayList<CastPerson> personArrayList, Context context) {
         this.personArrayList = personArrayList;
         this.context = context;
     }
@@ -43,7 +42,7 @@ public class SectionListAdapter extends RecyclerView.Adapter<SectionListAdapter.
         holder.tvName.setText(data.getName());
         holder.tvRank.setText(data.getLevel());
         holder.tvLocation.setText(data.getPlace());
-//        holder.tvRate.setText(data.getPrice());
+        holder.tvRate.setText(data.getPrice());
 
     }
 
@@ -63,7 +62,8 @@ public class SectionListAdapter extends RecyclerView.Adapter<SectionListAdapter.
             ivImage = (ImageView) itemView.findViewById(R.id.iv_cast_profile_picture);
             tvName = (TextView) itemView.findViewById(R.id.tv_cast_name);
             tvLocation = (TextView) itemView.findViewById(R.id.tv_cast_location);
-            tvRank = (TextView) itemView.findViewById(R.id.tv_cast_rate);
+            tvRate = (TextView) itemView.findViewById(R.id.tv_cast_rate);
+
         }
     }
 }
