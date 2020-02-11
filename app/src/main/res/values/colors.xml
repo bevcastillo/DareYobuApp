@@ -30,4 +30,6 @@
     <color name="colorWhiteSmoke">#F5F5F5</color>
     <color name="colorSilver">#C0C0C0</color>
     <color name="colorGray">#808080</color>
+    
+    <color name="colorGainsboro">#DCDCDC</color>
 </resources>
