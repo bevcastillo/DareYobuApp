@@ -14,17 +14,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ChatActivity"
-            android:theme="@style/WhiteTheme"></activity>
+        <activity android:name=".ReportUserActivity"
+            android:theme="@style/WhiteTheme"
+            android:parentActivityName=".ChatMoreOptActivity"></activity>
+        <activity
+            android:name=".ChatActivity"
+            android:theme="@style/WhiteTheme" />
         <activity android:name=".CreatePostActivity" />
         <activity android:name=".AddNewAddrActivity" />
         <activity android:name=".CreateReservationActivity" />
         <activity
             android:name=".ViewCastProfileActivity"
             android:theme="@style/WhiteTheme" />
-        <activity android:name=".ChatMoreOptActivity"
-            android:theme="@style/WhiteTheme"
-            android:parentActivityName=".ChatActivity"/>
+        <activity
+            android:name=".ChatMoreOptActivity"
+            android:parentActivityName=".ChatActivity"
+            android:theme="@style/WhiteTheme" />
         <activity android:name=".ViewReservationActivity" />
         <activity
             android:name=".cast_ui.CastNavigationActivity"
