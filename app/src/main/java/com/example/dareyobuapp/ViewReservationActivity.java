@@ -22,9 +22,6 @@ import butterknife.OnClick;
 
 public class ViewReservationActivity extends AppCompatActivity {
 
-//    @BindView(R2.id.btn_resv_confirm) Button btnConfirm;
-//    @BindView(R.id.btn_resv_confirm) Button btnConfirm;
-
     private Dialog mDialog;
     private Context context;
     private String strCastName, strReservStatus;

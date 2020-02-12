@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/civ_chat_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_photo_colored"
+        app:civ_border="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_chat_cast_name"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Beverly May Castillo"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="@+id/civ_chat_image"
+        app:layout_constraintStart_toStartOf="@+id/civ_chat_image"
+        app:layout_constraintTop_toBottomOf="@+id/civ_chat_image" />
+
+    <TextView
+        android:id="@+id/tv_chat_cast_talent"
+        style="@style/TextAppearance.AppCompat.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Singer"
+        app:layout_constraintEnd_toEndOf="@+id/tv_chat_cast_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_chat_cast_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_chat_cast_name" />
+
+    <TextView
+        android:id="@+id/tv_chat_cast_location"
+        style="@style/TextAppearance.AppCompat.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Tokyo, Japan"
+        app:layout_constraintEnd_toEndOf="@+id/tv_chat_cast_talent"
+        app:layout_constraintStart_toStartOf="@+id/tv_chat_cast_talent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_chat_cast_talent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="#F2F2F4"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_chat_cast_location">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@null"
+                android:src="@drawable/gif_welcome" />
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Type your first message!"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="It's time to start a conversation." />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

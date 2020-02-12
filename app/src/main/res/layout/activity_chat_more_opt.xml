@@ -23,7 +23,8 @@
                 android:src="@drawable/ic_photo_colored"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:civ_border="false"/>
 
             <TextView
                 android:id="@+id/tv_useracct_name"

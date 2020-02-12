@@ -14,7 +14,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="2"
-        android:verticalScrollbarPosition="right"/>
+        android:verticalScrollbarPosition="right"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/layout_empty_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/custom_empty_chat_layout"
+        android:layout_weight="2"
+        android:verticalScrollbarPosition="right"
+        android:visibility="visible"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
