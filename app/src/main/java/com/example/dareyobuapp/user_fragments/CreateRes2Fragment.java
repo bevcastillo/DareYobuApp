@@ -1,4 +1,4 @@
-package com.example.dareyobuapp;
+package com.example.dareyobuapp.user_fragments;
 
 
 import android.app.DatePickerDialog;
@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.DatePicker;
 import android.widget.TimePicker;
 
+import com.example.dareyobuapp.R;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 

@@ -11,6 +11,7 @@ import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.dareyobuapp.splash_screen.MainActivity;
@@ -24,22 +25,28 @@ public class ViewReservationActivity extends AppCompatActivity {
 //    @BindView(R2.id.btn_resv_confirm) Button btnConfirm;
 //    @BindView(R.id.btn_resv_confirm) Button btnConfirm;
 
-    Dialog mDialog;
-    Context context;
+    private Dialog mDialog;
+    private Context context;
+    private String strCastName, strReservStatus;
+    private TextView tvCastName, tvReservStatus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_reservation);
 
-        setTitle("View Reservation");
+        tvCastName = (TextView) findViewById(R.id.tv_res_cast_name);
+        tvReservStatus = (TextView) findViewById(R.id.tv_res_status);
 
-//        @BindView(R2.id.user) EditText username;
+        setTitle("View Reservation");
 
         ButterKnife.bind(this);
 
         //
         mDialog = new Dialog(ViewReservationActivity.this);
+
+        //
+        getDataFromIntent();
 
     }
 
@@ -49,5 +56,16 @@ public class ViewReservationActivity extends AppCompatActivity {
         mDialog.show();
     }
 
+    public void getDataFromIntent() {
+        Bundle bundle = this.getIntent().getExtras();
+
+        if (bundle != null) {
+            strCastName = bundle.getString("cast_name");
+            strReservStatus = bundle.getString("res_status");
+
+            tvCastName.setText(strCastName);
+            tvReservStatus.setText(strReservStatus);
+        }
+    }
 
 }

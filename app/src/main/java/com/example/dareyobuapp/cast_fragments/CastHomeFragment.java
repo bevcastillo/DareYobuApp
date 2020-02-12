@@ -1,6 +1,7 @@
 package com.example.dareyobuapp.cast_fragments;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -13,9 +14,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
+import com.example.dareyobuapp.CreatePostActivity;
 import com.example.dareyobuapp.R;
 import com.example.dareyobuapp.adapters.CastPostAdapter;
 import com.example.dareyobuapp.models.CastPost;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,10 +27,11 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class CastHomeFragment extends Fragment {
+public class CastHomeFragment extends Fragment implements View.OnClickListener {
 
     private RecyclerView rvAllPost;
     private List<CastPost> list;
+    private FloatingActionButton fabWritePost;
 
     public CastHomeFragment() {
         // Required empty public constructor
@@ -41,6 +45,9 @@ public class CastHomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_cast_home, container, false);
 
         rvAllPost = (RecyclerView) view.findViewById(R.id.rv_cast_all_post);
+        fabWritePost = (FloatingActionButton) view.findViewById(R.id.fab_write_post);
+
+        fabWritePost.setOnClickListener(this);
 
         return view;
     }
@@ -83,5 +90,17 @@ public class CastHomeFragment extends Fragment {
         rvAllPost.setAdapter(adapter);
 
         super.onStart();
+    }
+
+    @Override
+    public void onClick(View v) {
+        int id = v.getId();
+
+        switch (id) {
+            case R.id.fab_write_post:
+                Intent toCreatePostIntent = new Intent(getActivity(), CreatePostActivity.class);
+                startActivity(toCreatePostIntent);
+                break;
+        }
     }
 }

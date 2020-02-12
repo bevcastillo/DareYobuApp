@@ -29,11 +29,10 @@
         android:backgroundTint="@color/colorWhite"
         android:minHeight="0dp"
         android:padding="10dp"
+        android:alpha="0.8"
         android:text="I am looking for a talent"
         android:textAllCaps="false"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/colorPrimary"
-        android:textStyle="bold"
         android:layout_centerInParent="true"/>
 
     <Button
@@ -50,9 +49,7 @@
         android:padding="10dp"
         android:text="I am a talent"
         android:textAllCaps="false"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/colorWhite"
-        android:textStyle="bold"
         android:layout_centerInParent="true"/>
 
 </RelativeLayout>

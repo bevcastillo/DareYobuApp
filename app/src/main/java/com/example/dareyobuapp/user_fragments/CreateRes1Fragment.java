@@ -1,4 +1,4 @@
-package com.example.dareyobuapp;
+package com.example.dareyobuapp.user_fragments;
 
 
 import android.content.Intent;
@@ -17,6 +17,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.dareyobuapp.AddNewAddrActivity;
+import com.example.dareyobuapp.R;
 import com.example.dareyobuapp.adapters.AddressAdapter;
 import com.example.dareyobuapp.models.AddressObj;
 

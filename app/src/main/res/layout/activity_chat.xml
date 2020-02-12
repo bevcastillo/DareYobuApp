@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChatActivity"
+    android:clipToPadding="false"
+    android:focusableInTouchMode="true"
+    android:background="@color/colorWhiteBG">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:verticalScrollbarPosition="right"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/colorWhite">
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="Write your reply..."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_text"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ic_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/editText2"
+            app:layout_constraintTop_toBottomOf="@+id/editText2"
+            android:backgroundTint="@color/colorGray"/>
+
+        <ImageButton
+            android:id="@+id/imgbtn_camera"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/ic_camera"
+            app:layout_constraintBottom_toBottomOf="@+id/imgbtn_text"
+            app:layout_constraintStart_toEndOf="@+id/imgbtn_text"
+            app:layout_constraintTop_toTopOf="@+id/imgbtn_text"
+            app:layout_constraintVertical_bias="0.0"
+            android:backgroundTint="@color/colorGray"/>
+
+        <ImageButton
+            android:id="@+id/imgbtn_gallery"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/ic_art"
+            app:layout_constraintBottom_toBottomOf="@+id/imgbtn_camera"
+            app:layout_constraintStart_toEndOf="@+id/imgbtn_camera"
+            app:layout_constraintTop_toTopOf="@+id/imgbtn_camera"
+            android:backgroundTint="@color/colorGray"/>
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/ic_gif"
+            android:backgroundTint="@color/colorGray"
+            app:layout_constraintBottom_toBottomOf="@+id/imgbtn_gallery"
+            app:layout_constraintStart_toEndOf="@+id/imgbtn_gallery"
+            app:layout_constraintTop_toTopOf="@+id/imgbtn_gallery"
+            android:visibility="gone"/>
+
+        <ImageButton
+            android:id="@+id/imgbtn_smiley"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/ic_smile_filled"
+            android:backgroundTint="@color/colorGray"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton6"
+            app:layout_constraintStart_toEndOf="@+id/imageButton6"
+            app:layout_constraintTop_toTopOf="@+id/imageButton6" />
+
+        <TextView
+            android:id="@+id/tv_send_mssg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            app:layout_constraintBottom_toBottomOf="@+id/imgbtn_gallery"
+            app:layout_constraintEnd_toEndOf="@+id/editText2"
+            style="@style/TextAppearance.AppCompat.Medium"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
