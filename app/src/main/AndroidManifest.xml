@@ -14,9 +14,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ReportUserActivity"
-            android:theme="@style/WhiteTheme"
-            android:parentActivityName=".ChatMoreOptActivity"></activity>
+        <activity android:name=".CastSettingsActivity"></activity>
+        <activity
+            android:name=".ReportUserActivity"
+            android:parentActivityName=".ChatMoreOptActivity"
+            android:theme="@style/WhiteTheme" />
         <activity
             android:name=".ChatActivity"
             android:theme="@style/WhiteTheme" />
